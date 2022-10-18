@@ -1,6 +1,28 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2638
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    string a[n];
+	    for(int i=0;i<n;i++){
+	        cin>>a[i];
+	    }
+	    int count1=0;
+	    int count2=0;
+	    for(int i=0;i<n;i++){
+	        if(a[i]=="START38"){
+	            count1++;
+	        }
+	        else if(a[i]=="LTIME108"){
+	            count2++;
+	        }
+	    }
+	     cout<<count1<<" "<<count2<<endl;
+	}
+	return 0;
 }
