@@ -1,6 +1,19 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2638
-\cocoatextscaling0\cocoaplatform0{\fonttbl}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int l,r,count=0;
+	    cin>>l>>r;
+	    for(int i=l;i<=r;i++){
+	        if(i%10==2 or i%10==3 or i%10==9){
+	            count++;
+	        }
+	    }
+	    cout<<count<<endl;
+	}
+	return 0;
 }
